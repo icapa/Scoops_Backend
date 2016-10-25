@@ -13,7 +13,7 @@ var api = {
         var query = {
             sql: "Select * FROM Posts"
         };
-        
+
         req.azureMobile.data.execute(query)
             .then(function(result){
                 res.json(result);
@@ -23,3 +23,4 @@ var api = {
 
 /*api.get.access = 'anonymous';
 module.exports = api;*/
+module.exports = api;
