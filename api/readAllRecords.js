@@ -21,5 +21,5 @@ var api = {
     }
 };
 
-api.get.access = 'anonymous';
-module.exports = api;
+/*api.get.access = 'anonymous';
+module.exports = api;*/
