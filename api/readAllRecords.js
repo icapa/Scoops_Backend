@@ -11,7 +11,7 @@ var api = {
 
         //var context = req.azureMobile;
         //var user = context.user.id;
-
+        /*
         var query = {
             sql: "Select * FROM Autors"
         };
@@ -20,6 +20,9 @@ var api = {
             .then(function (result) {
                 res.json(result);
             });
+        */
+        result = {"nada" : "vacio"};
+        res.json(result);
     }
 
 };
