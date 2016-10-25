@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Práctica Cloud Backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icapa/Scoops_Backend.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Icapa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icapa/Scoops_Backend/issues"
+  },
+  "homepage": "https://github.com/icapa/Scoops_Backend#readme",
+  "dependencies": {
+    "azure-mobile-apps": "^3.0.2",
+    "express": "^4.14.0"
+  }
+}
