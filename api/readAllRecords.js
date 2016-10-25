@@ -9,7 +9,7 @@ var api = {
             return next();
         }
 
-        var context = req.azureMobile;
+        //var context = req.azureMobile;
         //var user = context.user.id;
 
         var query = {
