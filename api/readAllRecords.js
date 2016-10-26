@@ -21,7 +21,7 @@ var api = {
                 res.json(result);
             });
         */
-        result = {"nada" : "vacio"};
+        result = {"nada" : req.body.usuario};
         res.json(result);
     }
 
