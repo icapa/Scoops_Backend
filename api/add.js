@@ -15,18 +15,20 @@ var api = {
         //var user = context.user.id;
 
 
-        
+
          var query = {
              sql: 'INSERT INTO Posts title=@title',
              parameters : [
                  {name: 'author' , value: title}
              ]
          };
-
+        res.json(req.body)
+        /*
          req.azureMobile.data.execute(query)
          .then(function (result) {
-         res.json(result);
+            res.json(result);
          });
+         */
 
     }
 
