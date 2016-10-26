@@ -23,9 +23,8 @@ var api = {
          res.json(result);
          });
          */
-
-        var result = {"usuario" : req.body.usuario};
-        res.json(result);
+        let name = req.body.usuario;
+        res.json({usuario : name});
     }
 
 };
