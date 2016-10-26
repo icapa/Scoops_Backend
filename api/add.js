@@ -14,6 +14,8 @@ var api = {
         //var context = req.azureMobile;
         //var user = context.user.id;
 
+
+        
          var query = {
              sql: 'INSERT INTO Posts title=@title',
              parameters : [

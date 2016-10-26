@@ -27,17 +27,17 @@ var table = azureMobileApps.table();
 
 
 table.columns = {
-     "title": "String",
-     "text": "String",
-     "photo": "String",
-     "latitude": "Double",
-     "longitude": "Double",
-     "author": "String",
-     "published": "Boolean",
-     "rate": "Double",
-     "wantPublish": "Boolean",
-     "containerName": "String",
-     "numberRates" : "Integer"
+     "title": "string",
+     "text": "string",
+     "photo": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "author": "string",
+     "published": "boolean",
+     "rate": "number",
+     "wantPublish": "boolean",
+     "containerName": "string",
+     "numberRates" : "number"
 };
 
 /*
