@@ -16,7 +16,7 @@ var api = {
 
 
          var query = {
-             sql: "INSERT INTO Posts (title,author,text) VALUES ('uno','dos','tres')"
+             sql: "SELECT * FROM Posts"
          };
 
 
@@ -25,7 +25,7 @@ var api = {
          .then(function (result) {
             res.json(result);
          });
-         res.json({vivo: "estoy vivo"});
+
 
 
     }
