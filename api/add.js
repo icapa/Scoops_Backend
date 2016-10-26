@@ -23,8 +23,8 @@ var api = {
          res.json(result);
          });
          */
-        let name = req.body.usuario;
-        res.json({usuario : name});
+        /*let name = req.body.usuario*/
+        res.json({usuario : "mierda"});
     }
 
 };
