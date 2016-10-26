@@ -21,8 +21,8 @@ var api = {
          res.json(result);
          });
          */
-        result = {"nada" : "vacio"};
-        res.json(result);
+        
+        res.json(req.body);
     }
 
 };
