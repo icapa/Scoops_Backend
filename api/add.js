@@ -17,10 +17,10 @@ var api = {
 
 
          var query = {
-             sql: 'Select * from Posts'
+             sql: 'UPDATE Post SET latitude=43.0'
          };
 
-        
+
          req.azureMobile.data.execute(query)
          .then(function (result) {
             res.json(result);
