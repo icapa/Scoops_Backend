@@ -24,6 +24,8 @@ table.columns = {
      "numberRates" : "number"
 };
 
+table.dynamicSchema = false;
+
 /*
 Permisos de acceso a la tabla
  */
