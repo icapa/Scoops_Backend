@@ -15,7 +15,6 @@ var api = {
         //var user = context.user.id;
 
 
-
          var query = {
              sql: "INSERT INTO Posts (title,author,text) VALUES ('uno','dos','tres')"
          };
@@ -26,6 +25,7 @@ var api = {
          .then(function (result) {
             res.json(result);
          });
+         res.json({vivo: "estoy vivo"});
 
 
     }

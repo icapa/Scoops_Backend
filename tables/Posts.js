@@ -2,25 +2,9 @@
  * Created by icapa on 25/10/16.
  */
 
-/*
- struct Post {
-
- let title: String
- let text: String
- var photo: String
- var latitude: Double
- var longitude: Double
- let author: String
- var status: Bool
- var rate: Double
- var available: Bool
- var containerName: String
-
- }
- */
 
 
-var azureMobileApps = require("azure-mobile-apps");
+var azureMobileApps = require('azure-mobile-apps');
 
 var table = azureMobileApps.table();
 
