@@ -10,8 +10,7 @@ var app = express(),
 
 var bodyParser = require('body-parser');
 
-
-
+mobile.tables.add('PruebaPosts');
 
 app.use(bodyParser.urlencoded({
     extended : true

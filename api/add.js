@@ -11,10 +11,10 @@ var api = {
         var text = req.body.text;
 
 
-        //var context = req.azureMobile;
+        var context = req.azureMobile;
         //var user = context.user.id;
 
-
+        /*
          var query = {
              sql: "INSERT INTO Posts (title) VALUES ('hola')"
          };
@@ -25,6 +25,17 @@ var api = {
          .then(function (result) {
             res.json(result);
          });
+        */
+        var item = {
+            title : 'Hola',
+            author: 'Ivan',
+            text: 'Lalalala'
+        };
+
+        context.tables('PruebaPosts')
+            .insert(item)
+            .then(() => res.status(201).send('Success!'))
+            .catch(next);
 
 
 
