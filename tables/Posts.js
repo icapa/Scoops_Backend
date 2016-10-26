@@ -25,6 +25,7 @@ var azureMobileApps = require("azure-mobile-apps");
 var table = azureMobileApps.table();
 
 
+
 table.columns = {
      "title": "String",
      "text": "String",
@@ -32,9 +33,9 @@ table.columns = {
      "latitude": "Double",
      "longitude": "Double",
      "author": "String",
-     "status": "Bool",
+     "status": "Boolean",
      "rate": "Double",
-     "available": "Bool",
+     "available": "Boolean",
      "containerName": "String"
 };
 
@@ -43,8 +44,8 @@ Permisos de acceso a la tabla
  */
 
 table.read.access = 'anonymous';
-table.update.access = 'disabled';
-table.insert.access = 'anonymous';
+table.update.access = 'authenticated';
+table.insert.access = 'authenticated';
 
 module.exports = table;
 
