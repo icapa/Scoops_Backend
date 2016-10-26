@@ -23,6 +23,7 @@ table.columns = {
      "containerName": "string",
      "numberRates" : "number"
 };
+/* Estatico */
 
 table.dynamicSchema = false;
 
