@@ -30,7 +30,7 @@ Permisos de acceso a la tabla
 
 table.read.access = 'anonymous';
 table.update.access = 'anonymous';
-table.insert.access = 'anonymous';
+table.insert.access = 'authenticated';
 
 module.exports = table;
 
