@@ -33,10 +33,11 @@ table.columns = {
      "latitude": "Double",
      "longitude": "Double",
      "author": "String",
-     "status": "Boolean",
+     "published": "Boolean",
      "rate": "Double",
-     "available": "Boolean",
-     "containerName": "String"
+     "wantPublish": "Boolean",
+     "containerName": "String",
+     "numberRates" : "Integer"
 };
 
 /*
@@ -44,8 +45,8 @@ Permisos de acceso a la tabla
  */
 
 table.read.access = 'anonymous';
-table.update.access = 'authenticated';
-table.insert.access = 'authenticated';
+table.update.access = 'anonymous';
+table.insert.access = 'anonymous';
 
 module.exports = table;
 
