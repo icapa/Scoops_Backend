@@ -5,9 +5,11 @@ var api = {
     post: function (req, res, next) {
 
         // chequear parametros
+        /*
         if (typeof req.params.length < 0) {
             return next();
         }
+        */
 
         //var context = req.azureMobile;
         //var user = context.user.id;
