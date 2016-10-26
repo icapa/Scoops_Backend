@@ -17,18 +17,15 @@ var api = {
 
 
          var query = {
-             sql: 'INSERT INTO Posts title=@title',
-             parameters : [
-                 {name: 'author' , value: title}
-             ]
+             sql: 'Select * from Posts'
          };
-        res.json(req.body)
-        /*
+
+        
          req.azureMobile.data.execute(query)
          .then(function (result) {
             res.json(result);
          });
-         */
+
 
     }
 
