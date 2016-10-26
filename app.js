@@ -11,6 +11,8 @@ var app = express(),
 var bodyParser = require('body-parser');
 
 
+mobile.tables.add('Posts');
+
 app.use(bodyParser.urlencoded({
     extended : true
 }));

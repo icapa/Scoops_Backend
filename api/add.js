@@ -32,5 +32,5 @@ var api = {
 
 };
 
-api.post.access = 'authenticated';
+api.post.access = 'anonymous';
 module.exports = api;
