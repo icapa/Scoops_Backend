@@ -17,8 +17,9 @@ var api = {
 
 
          var query = {
-             sql: 'UPDATE Post SET latitude=43.0'
+             sql: "INSERT INTO Posts (title,author,text) VALUES ('uno','dos','tres')"
          };
+
 
 
          req.azureMobile.data.execute(query)
