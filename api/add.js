@@ -16,7 +16,7 @@ var api = {
 
 
          var query = {
-             sql: "SELECT * FROM Posts"
+             sql: "INSERT INTO Posts (title) VALUES ('hola')"
          };
 
 
