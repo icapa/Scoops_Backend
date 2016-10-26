@@ -34,7 +34,7 @@ var api = {
 
         context.tables('PruebaPosts')
             .insert(item)
-            .then(() => res.status(200).send({status: 'OK'})
+            .then(() => res.status(200).json({status: "OK"}))
             .catch(next);
 
 
