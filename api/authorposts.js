@@ -10,8 +10,6 @@ var api = {
         }
         var publicada = req.query.publish;
 
-
-
         var context = req.azureMobile;
         //var user = context.user.id;
         var user = 'sid:d88065d9dbcb66c21c4cc0de8ad05fe0';
@@ -19,12 +17,18 @@ var api = {
         console.log('Publicada: ' + publicada);
         console.log('UserId:' + user);
 
+        var query;
+        if (publicada){
+            query={userId: user, published:publicada};
+        }else{
+            query={userId: user};
+        }
+        
         context.tables('AuthorPosts')
-            .where ({userId: user, published:publicada})
+            .where (query)
             .read()
             .then(results => res.json(results))
             .catch(next)
-
     }
 
 };
