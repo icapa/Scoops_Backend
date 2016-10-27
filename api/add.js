@@ -10,6 +10,10 @@ var api = {
         var author = req.param('author');
         var text = req.param('text');
 
+        console.log('Tituloooo :'+title);
+        console.log('Authorrrr:' + author);
+        console.log('Textxxxx:'+text);
+
 
         var context = req.azureMobile;
 
