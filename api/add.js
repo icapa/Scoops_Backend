@@ -8,12 +8,32 @@ var api = {
 
         var title = req.param('title');
         var author = req.param('author');
-        var text = req.param('text');
+        var texto = req.param('text');
 
+        var title1 = req.params.title;
+        var author1 = req.params.title;
+        var texto1 = req.params.text;
+
+        var title2 = req.query.title;
+        var author2 = req.query.title;
+        var texto2 = req.query.text;
+
+
+        console.log('---- LOS PARAMETROS -----');
         console.log('Tituloooo :'+title);
         console.log('Authorrrr:' + author);
-        console.log('Textxxxx:'+text);
-  
+        console.log('Textxxxx:'+texto);
+        console.log('---- LOS PARAMETROS -----');
+        console.log('---- LOS PARAMETROS -----');
+        console.log('Tituloooo :'+title1);
+        console.log('Authorrrr:' + author1);
+        console.log('Textxxxx:'+texto1);
+        console.log('---- LOS PARAMETROS -----');
+        console.log('---- LOS PARAMETROS -----');
+        console.log('Tituloooo :'+title2);
+        console.log('Authorrrr:' + author2);
+        console.log('Textxxxx:'+texto2);
+        console.log('---- LOS PARAMETROS -----');
 
         var context = req.azureMobile;
 
@@ -42,7 +62,7 @@ var api = {
             photo:'',
             title : title,
             author: author,
-            text: text,
+            text: texto,
             userId : user
         };
 
