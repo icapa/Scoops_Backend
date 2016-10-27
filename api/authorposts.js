@@ -10,7 +10,7 @@ var api = {
         }
         var publicada = req.params.publish;
         console.log('---- PARAMETROS TODOS ----');
-        console.log('Paramatros: '+ req.params);
+        console.log('Paramatros: '+ req.query);
 
         var context = req.azureMobile;
         //var user = context.user.id;
