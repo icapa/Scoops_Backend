@@ -10,13 +10,13 @@ var api = {
         var author = req.param('author');
         var texto = req.param('text');
 
-        var title1 = req.params.title;
-        var author1 = req.params.title;
-        var texto1 = req.params.text;
+        var title1 = req.query.title;
+        var author1 = req.query.title;
+        var texto1 = req.query.text;
 
         var title2 = req.body['author'];
         var author2 = req.body['title'];
-        var texto2 = req.body[2];
+        var texto2 = req.body['text'];
 
 
 
