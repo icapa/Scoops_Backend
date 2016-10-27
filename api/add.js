@@ -47,8 +47,6 @@ var api = {
             .then(() => res.status(200).json({status: 'OK'}))
             .catch(next);
 
-
-
     }
 
 };
