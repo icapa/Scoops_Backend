@@ -39,8 +39,8 @@ var api = {
         console.log('---- EL PUTO BODY ENTERO ----');
         console.log(req.body);
         console.log(typeof(req.body));
-        console.log(req.params);
-        console.log(req.param['title']);
+        console.log(req.params.title);
+        console.log(req.param('title'));
 
         var context = req.azureMobile;
 
