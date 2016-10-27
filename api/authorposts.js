@@ -9,8 +9,8 @@ var api = {
             return next();
         }
         var publicada = req.query.publish;
-        console.log('---- PARAMETROS TODOS ----');
-        console.log('Paramatros: '+ req.query.publicada);
+
+
 
         var context = req.azureMobile;
         //var user = context.user.id;
@@ -20,7 +20,7 @@ var api = {
         console.log('UserId:' + user);
 
         context.tables('AuthorPosts')
-            .where ({userId: user})
+            .where ({userId: user},{publish: publish})
             .read()
             .then(results => res.json(results))
             .catch(next)
