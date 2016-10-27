@@ -8,8 +8,10 @@ var api = {
         if (typeof req.params.length < 0) {
             return next();
         }
-        var publicada = req.params.publish
-        
+        var publicada = req.params.publish;
+        console.log('---- PARAMETROS TODOS ----');
+        console.log('Paramatros: '+ req.params);
+
         var context = req.azureMobile;
         //var user = context.user.id;
         var user = 'sid:d88065d9dbcb66c21c4cc0de8ad05fe0';
@@ -22,20 +24,6 @@ var api = {
             .read()
             .then(results => res.json(results))
             .catch(next)
-
-        /*
-         var query = {
-            sql: "Select * FROM AuthorPosts where userId=@userId",
-            params: {userId : user}
-         };
-
-         req.azureMobile.data.execute(query)
-         .then(function (result) {
-            res.json(result);
-            })
-         .catch(next);
-
-        */
 
     }
 
