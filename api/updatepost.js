@@ -26,7 +26,8 @@ var api = {
             parameters: [
                 {name: 'title' , value : titulo},
                 {name: 'author', value : autor},
-                {name: 'text', value:texto}
+                {name: 'text', value:texto},
+                {name: 'id', value: id}
             ]
         };
 
