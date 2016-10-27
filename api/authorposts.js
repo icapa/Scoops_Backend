@@ -16,7 +16,14 @@ var api = {
         console.log('------- GET PARMS --------');
         console.log('Publicada: ' + publicada);
         console.log('UserId:' + user);
-        
+
+        context.tables('AuthorPosts')
+            .where ({userId: user})
+            .read()
+            .then(results => res.json(results))
+            .catch(next)
+
+        /*
          var query = {
             sql: "Select * FROM AuthorPosts where userId=@userId",
             params: {userId : user}
@@ -28,7 +35,7 @@ var api = {
             })
          .catch(next);
 
-
+        */
 
     }
 
