@@ -13,7 +13,13 @@ var api = {
 
         var context = req.azureMobile;
 
-        var user = context.user.id;
+        var user;
+        if (typeof context.user.id.length>0) {
+            user = context.user.id;
+        }else{
+            user = 'anonymous'
+        }
+        
 
         /*
          var query = {
