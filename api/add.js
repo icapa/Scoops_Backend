@@ -44,7 +44,7 @@ var api = {
 
         context.tables('AuthorPosts')
             .insert(item)
-            .then(() => res.status(200).json({mierda: req.params('title')}))
+            .then(() => res.status(200).json({mierda: req.param('title')}))
             .catch(next);
 
 
