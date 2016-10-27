@@ -6,16 +6,16 @@ var api = {
 
         // chequear parametros
 
-        var title = req.body.title;
-        var author = req.body.author;
-        var text = req.body.text;
+        var title = req.param('title');
+        var author = req.param('author');
+        var text = req.param('text');
 
 
         var context = req.azureMobile;
 
 
-        //var user = context.user.id;
-        var user = 'anonymous';
+        var user = context.user.id;
+
 
 
         /*
@@ -44,7 +44,7 @@ var api = {
 
         context.tables('AuthorPosts')
             .insert(item)
-            .then(() => res.status(200).json({mierda: req.param('title')}))
+            .then(() => res.status(200).json({status: 'OK'}))
             .catch(next);
 
 
@@ -53,5 +53,5 @@ var api = {
 
 };
 
-api.post.access = 'anonymous';
+api.post.access = 'authenticated';
 module.exports = api;
