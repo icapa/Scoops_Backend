@@ -14,9 +14,9 @@ var api = {
         var author1 = req.params.title;
         var texto1 = req.params.text;
 
-        var title2 = req.query.title;
-        var author2 = req.query.title;
-        var texto2 = req.query.text;
+        var title2 = req.query['title'];
+        var author2 = req.query['author'];
+        var texto2 = req.query['text'];
 
 
 
@@ -38,7 +38,7 @@ var api = {
         console.log('---- LOS PARAMETROS -----');
         console.log('---- EL PUTO BODY ENTERO ----');
         console.log(req.body);
-        
+
 
         var context = req.azureMobile;
 
