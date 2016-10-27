@@ -19,6 +19,8 @@ var api = {
         var texto2 = req.query.text;
 
 
+
+
         console.log('---- LOS PARAMETROS -----');
         console.log('Tituloooo :'+title);
         console.log('Authorrrr:' + author);
@@ -34,6 +36,9 @@ var api = {
         console.log('Authorrrr:' + author2);
         console.log('Textxxxx:'+texto2);
         console.log('---- LOS PARAMETROS -----');
+        console.log('---- EL PUTO BODY ENTERO ----');
+        console.log(req.body);
+        
 
         var context = req.azureMobile;
 
