@@ -10,7 +10,7 @@ var app = express(),
 
 var bodyParser = require('body-parser');
 
-mobile.tables.add('Posts');
+mobile.tables.add('AuthorPosts');
 
 app.use(bodyParser.urlencoded({
     extended : true
