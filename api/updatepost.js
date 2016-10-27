@@ -8,7 +8,7 @@ var api = {
 
         var id = req.query.id;
         var titulo = req.query.title;
-        var texto = req.query.texto;
+        var texto = req.query.text;
         var autor = req.query.author;
 
 
