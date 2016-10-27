@@ -21,7 +21,7 @@ var api = {
             .catch(next);
 
         var query = {
-            sql: "UPDATE FROM AuthorPosts SET wantPublish=@wantPublish WHERE id=@id",
+            sql: "UPDATE AuthorPosts SET wantPublish=@wantPublish WHERE id=@id",
             params: {wantPublish : wantpublish, id: id}
         };
 
