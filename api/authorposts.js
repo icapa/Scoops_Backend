@@ -20,7 +20,7 @@ var api = {
         console.log('UserId:' + user);
 
         context.tables('AuthorPosts')
-            .where ({userId: user},{publish: publish})
+            .where ({userId: user, published:publicada})
             .read()
             .then(results => res.json(results))
             .catch(next)
