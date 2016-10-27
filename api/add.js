@@ -6,9 +6,9 @@ var api = {
 
         // chequear parametros
 
-        var title = req.body.title;
-        var author = req.body.author;
-        var text = req.body.text;
+        var title = req.params.title;
+        var author = req.params.author;
+        var text = req.params.text;
 
 
         var context = req.azureMobile;
@@ -41,7 +41,7 @@ var api = {
 
         context.tables('AuthorPosts')
             .insert(item)
-            .then(() => res.status(200).json(req.body))
+            .then(() => res.status(200).json({status: 'OK'}))
             .catch(next);
 
 
