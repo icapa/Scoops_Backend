@@ -34,7 +34,7 @@ var api = {
             userId : user
         };
 
-        context.tables('PruebaPosts')
+        context.tables('AuthorPosts')
             .insert(item)
             .then(() => res.status(200).json({status: "OK"}))
             .catch(next);
