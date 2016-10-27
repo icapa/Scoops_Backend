@@ -8,17 +8,23 @@ var api = {
 
         var id = req.query.id;
         var wantpublish = req.query.wantpublish;
+
+        console.log("----- PUT PARAMETERS -------");
+        console.log("id: " + id);
+        console.log("wantpublish: " + wantpublish);
+        console.log("-----------------------------");
+
+
+
         var context = req.azureMobile;
+
+
         var user = context.user.id;
 
         var item = {
             wantPublish : wantpublish
         };
 
-        context.tables('AuthorPosts')
-            .insert(item)
-            .then(() => res.status(200).json({status: 'OK',wantPublish : wantpublish}))
-            .catch(next);
 
         var query = {
             sql: "UPDATE AuthorPosts SET wantPublish=@wantPublish WHERE id=@id",
