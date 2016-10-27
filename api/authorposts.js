@@ -18,7 +18,7 @@ var api = {
         console.log('UserId:' + user);
         
          var query = {
-            sql: "Select * FROM AuthorPosts where userId='@userId'",
+            sql: "Select * FROM AuthorPosts where userId=@userId",
             params: {userId : user}
          };
 
