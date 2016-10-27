@@ -8,9 +8,9 @@ var api = {
         if (typeof req.params.length < 0) {
             return next();
         }
-        var publicada = req.params.publish;
+        var publicada = req.query.publish;
         console.log('---- PARAMETROS TODOS ----');
-        console.log('Paramatros: '+ req.query);
+        console.log('Paramatros: '+ req.query.publicada);
 
         var context = req.azureMobile;
         //var user = context.user.id;
