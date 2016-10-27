@@ -12,7 +12,7 @@ var api = {
         var user = context.user.id;
 
         var item = {
-            wantPublish : wantPublish
+            wantPublish : wantpublish
         };
 
         context.tables('AuthorPosts')
