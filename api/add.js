@@ -6,21 +6,16 @@ var api = {
 
         // chequear parametros
 
-        var title = req.param('title');
-        var author = req.param('author');
-        var texto = req.param('text');
 
-        var title1 = req.query.title;
-        var author1 = req.query.title;
-        var texto1 = req.query.text;
 
-        var title2 = req.body['author'];
-        var author2 = req.body['title'];
-        var texto2 = req.body['text'];
+        var title = req.query.title;
+        var author = req.query.author;
+        var texto = req.query.text;
 
 
 
 
+        /*
         console.log('---- LOS PARAMETROS -----');
         console.log('Tituloooo :'+title);
         console.log('Authorrrr:' + author);
@@ -41,12 +36,13 @@ var api = {
         console.log(typeof(req.body));
         console.log(req.params.title);
         console.log(req.param('title'));
+        */
 
         var context = req.azureMobile;
 
 
-        //var user = context.user.id;
-        var user = 'anonymous'
+        var user = context.user.id;
+
 
 
         /*
