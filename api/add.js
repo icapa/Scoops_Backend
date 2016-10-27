@@ -15,7 +15,7 @@ var api = {
 
 
         //var user = context.user.id;
-
+        var user = 'anonymous';
 
 
         /*
