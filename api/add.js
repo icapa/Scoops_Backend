@@ -13,7 +13,7 @@ var api = {
         console.log('Tituloooo :'+title);
         console.log('Authorrrr:' + author);
         console.log('Textxxxx:'+text);
-
+  
 
         var context = req.azureMobile;
 
