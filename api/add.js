@@ -14,9 +14,9 @@ var api = {
         var author1 = req.params.title;
         var texto1 = req.params.text;
 
-        var title2 = req.body.title;
-        var author2 = req.body.author;
-        var texto2 = req.body.text;
+        var title2 = req.body[0];
+        var author2 = req.body[1];
+        var texto2 = req.body[2];
 
 
 
