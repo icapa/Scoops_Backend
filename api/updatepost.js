@@ -18,10 +18,7 @@ var api = {
 
 
         var user = context.user.id;
-
-        var item = {
-            wantPublish : wantpublish
-        };
+        
 
 
         var query = {
