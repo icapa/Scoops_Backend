@@ -28,7 +28,10 @@ var api = {
 
         var query = {
             sql: "UPDATE AuthorPosts SET wantPublish=@wantPublish WHERE id=@id",
-            params: {wantPublish : wantpublish, id: id}
+            parameters: [
+                    {wantPublish : wantpublish},
+                    {id: id}
+                ]
         };
 
         req.azureMobile.data.execute(query)
