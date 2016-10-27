@@ -12,7 +12,8 @@ var api = {
 
 
         var context = req.azureMobile;
-        //var user = context.user.id;
+
+        var user = context.user.id;
 
         /*
          var query = {
@@ -29,7 +30,8 @@ var api = {
         var item = {
             title : 'Hola',
             author: 'Ivan',
-            text: 'Lalalala'
+            text: 'Lalalala',
+            userId : user
         };
 
         context.tables('PruebaPosts')
@@ -43,5 +45,5 @@ var api = {
 
 };
 
-api.post.access = 'anonymous';
+api.post.access = 'authenticated';
 module.exports = api;
