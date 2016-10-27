@@ -28,9 +28,14 @@ var api = {
          });
         */
         var item = {
-            title : 'Hola',
-            author: 'Ivan',
-            text: 'Lalalala',
+            rate: 0.0,
+            numRates : 0,
+            published: false,
+            wantPublish: false,
+            photo:'',
+            title : title,
+            author: author,
+            text: text,
             userId : user
         };
 
