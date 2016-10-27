@@ -41,7 +41,7 @@ var api = {
 
         context.tables('AuthorPosts')
             .insert(item)
-            .then(() => res.status(200).json({mierda: req.body.title}))
+            .then(() => res.status(200).json({mierda: req.params.title}))
             .catch(next);
 
 
@@ -50,5 +50,5 @@ var api = {
 
 };
 
-api.post.access = 'authenticated';
+api.post.access = 'anonymous';
 module.exports = api;
