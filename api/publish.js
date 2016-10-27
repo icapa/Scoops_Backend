@@ -29,8 +29,7 @@ var api = {
         var query = {
             sql: "UPDATE AuthorPosts SET wantPublish=@wantPublish WHERE id=@id",
             parameters: [
-                    {wantPublish : wantpublish},
-                    {id: id}
+                    {wantPublish : wantpublish, id : id}
                 ]
         };
 
