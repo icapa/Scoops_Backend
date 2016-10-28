@@ -41,26 +41,24 @@ var api = {
                 console.log("RATE: Nueva valoracion global: " + valGlobal);
 
 
-                res.json(results)
+                res.json(results);
 
-                // Ahora se hace un update con los nuevos valores de numero y valGlobal
-                /*
-                 var query = {
-                 sql: "UPDATE AuthorPosts SET title=@title, author=@author, text=@text WHERE id=@id",
-                 parameters: [
-                 {name: 'title' , value : titulo},
-                 {name: 'author', value : autor},
-                 {name: 'text', value:texto},
-                 {name: 'id', value: id}
-                 ]
-                 };
 
-                 req.azureMobile.data.execute(query)
-                 .then(function (result) {
-                 res.json({status: "OK"});
-                 })
-                 .catch(next)
-                 */
+                var query = {
+                    sql: "UPDATE AuthorPosts SET rate=@rate, numRates=@numrates WHERE id=@id",
+                    parameters: [
+                        {name: 'rate' , value : valGlobal},
+                        {name: 'numrates', value : numero},
+                        {name: 'id', value: id}
+                    ]
+                };
+
+                req.azureMobile.data.execute(query)
+                .then(function (result) {
+                    res.json({status: "OK"});
+                })
+                .catch(next)
+
             })
             .catch(next)
 
