@@ -23,9 +23,9 @@ var api = {
             .read()
             .then(results => {
 
-                
-                console.log("RATE: Valoracion: " + results.rate);
-                console.log("RATE: Numero de valor: " + results.numRates);
+
+                console.log("RATE: Valoracion: " + results[rate]);
+                console.log("RATE: Numero de valor: " + results[numRates]);
 
                 var valoracion = results["rate"];
                 var numero = results["numRates"];
