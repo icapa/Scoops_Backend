@@ -12,6 +12,7 @@ var api = {
         var author = req.query.author;
         var texto = req.query.text;
 
+        var photo = req.query.photo;
 
         var context = req.azureMobile;
 
@@ -22,7 +23,7 @@ var api = {
             numRates : 0,
             published: false,
             wantPublish: false,
-            photo:'',
+            photo: photo,
             title : title,
             author: author,
             text: texto,
