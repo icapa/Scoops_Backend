@@ -6,7 +6,7 @@ var api = {
         var context = req.azureMobile;
 
         context.tables('AuthorPosts')
-            .orderBy('updatedAt')
+            .orderByDescending('updatedAt')
             .read()
             .then(results => res.json(results))
             .catch(next)
