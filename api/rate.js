@@ -4,11 +4,13 @@
 var api = {
     put: function (req, res, next) {
         /* Params */
+
         var id = req.query.id;
         var rate = req.query.rate;
 
         /* Context */
         var context = req.azureMobile;
+
 
         // Obtener un registro para sacar el numero de vallidaciones y la media
         console.log("RATE: id:"+id);
@@ -21,7 +23,7 @@ var api = {
             .read()
             .then(results => {
 
-                console.log("RATE: Encontrado registro");
+                console.log("RATE: Encontrado registro :" + results);
                 console.log("RATE: Valoracion: " + results["rate"]);
                 console.log("RATE: Numero de valor: " + results["numRates"])
 
@@ -33,7 +35,12 @@ var api = {
                 valGlobal = valGlobal + rate;
                 numero = numero + 1;
                 valGlobal = valGlobal/numero;
+
+
                 console.log("RATE: Nueva valoracion global: " + valGlobal);
+
+                res.json(results)
+
                 // Ahora se hace un update con los nuevos valores de numero y valGlobal
                 /*
                  var query = {
