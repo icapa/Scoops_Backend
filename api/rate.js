@@ -23,12 +23,13 @@ var api = {
             .read()
             .then(results => {
 
+                var sqlItem = results.pop();
 
-                console.log("RATE: Valoracion: " + results.data.rate);
-                console.log("RATE: Numero de valor: " + results.data.numRates);
+                console.log("RATE: Valoracion: " + sqlItem.rate);
+                console.log("RATE: Numero de valor: " + sqlItem.numRates);
 
-                var valoracion = results["rate"];
-                var numero = results["numRates"];
+                var valoracion = sqlItem.rate;
+                var numero = sqlItem.numRates;
 
                 var valGlobal = valoracion * numero;
 
