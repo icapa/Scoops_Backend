@@ -10,6 +10,7 @@ var api = {
         var titulo = req.query.title;
         var texto = req.query.text;
         var autor = req.query.author;
+        var photo = req.query.photo;
 
 
 
@@ -22,12 +23,13 @@ var api = {
 
 
         var query = {
-            sql: "UPDATE AuthorPosts SET title=@title, author=@author, text=@text WHERE id=@id",
+            sql: "UPDATE AuthorPosts SET title=@title, author=@author, text=@text , photo=@photo WHERE id=@id",
             parameters: [
                 {name: 'title' , value : titulo},
                 {name: 'author', value : autor},
                 {name: 'text', value:texto},
-                {name: 'id', value: id}
+                {name: 'id', value: id},
+                {name: 'photo', value: photo}
             ]
         };
 
