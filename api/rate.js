@@ -55,7 +55,7 @@ var api = {
 
                 req.azureMobile.data.execute(query)
                 .then(function (result) {
-                    res.json({status: "OK"});
+                    res.json({status: "OK", rate : valGlobal});
                 })
                 .catch(next)
 
