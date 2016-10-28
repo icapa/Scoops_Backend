@@ -40,10 +40,6 @@ var api = {
 
                 console.log("RATE: Nueva valoracion global: " + valGlobal);
 
-
-                res.json(results);
-
-
                 var query = {
                     sql: "UPDATE AuthorPosts SET rate=@rate, numRates=@numrates WHERE id=@id",
                     parameters: [
