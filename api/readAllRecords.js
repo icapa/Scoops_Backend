@@ -5,14 +5,14 @@ var api = {
     get: function (req, res, next) {
 
         var query = {
-            sql: "Select * FROM Autors"
+            sql: "Select * FROM PostAuthors"
         };
 
         req.azureMobile.data.execute(query)
             .then(function (result) {
                 res.json(result);
             })
-            .catch(res.json.({status:"ERROR"});
+            .catch(res.json.({status:"ERROR"}));
 
     }
 
