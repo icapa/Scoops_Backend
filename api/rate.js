@@ -28,10 +28,16 @@ var api = {
                 console.log("RATE: Valoracion: " + sqlItem.rate);
                 console.log("RATE: Numero de valor: " + sqlItem.numRates);
 
-                var valoracion = sqlItem.rate;
-                var numero = sqlItem.numRates;
+                var valoracion_str = sqlItem.rate;
+                var numero_str = sqlItem.numRates;
+
+                // Convertimos a numero para hacer la jugada
+                var valoracion = parseInt(valoracion_str,10);
+                var numero = parseInt(numero_str,10);
+                
 
                 var valGlobal = valoracion * numero;
+
                 console.log("RATE: AHORA Val: " + valoracion);
                 console.log("RATE: AHORA numero:" + numero);
                 console.log("RATE: AHORA total:" + valGlobal);
