@@ -4,8 +4,9 @@
 var api = {
     get: function (req, res, next) {
         var context = req.azureMobile;
-        
+
         context.tables('AuthorPosts')
+            .orderBy('updatedAt')
             .read()
             .then(results => res.json(results))
             .catch(next)
