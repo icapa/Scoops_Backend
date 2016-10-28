@@ -37,6 +37,7 @@ var api = {
                 console.log("RATE: AHORA total:" + valGlobal);
 
                 valGlobal = valGlobal + rate;
+                console.log("RATE: A MITAD total:" + valGlobal);
                 numero = numero + 1;
                 valGlobal = valGlobal / numero;
 
