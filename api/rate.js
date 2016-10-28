@@ -34,7 +34,7 @@ var api = {
                 // Convertimos a numero para hacer la jugada
                 var valoracion = parseInt(valoracion_str,10);
                 var numero = parseInt(numero_str,10);
-                
+
 
                 var valGlobal = valoracion * numero;
 
@@ -42,7 +42,8 @@ var api = {
                 console.log("RATE: AHORA numero:" + numero);
                 console.log("RATE: AHORA total:" + valGlobal);
 
-                valGlobal = valGlobal + rate;
+                valGlobal = valGlobal + parseInt(rate,10);
+
                 console.log("RATE: A MITAD total:" + valGlobal);
                 numero = numero + 1;
                 valGlobal = valGlobal / numero;
