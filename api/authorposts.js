@@ -26,6 +26,7 @@ var api = {
         
         context.tables('AuthorPosts')
             .where (query)
+            .orderByDescending('updatedAt')
             .read()
             .then(results => res.json(results))
             .catch(next)
